@@ -1,1 +1,35 @@
-/*# sourceMappingURL=Modal.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+}
+
+.pad {
+  padding: 0 30px;
+}
+@media (min-width: 800px) {
+  .pad {
+    padding: 0 100px;
+  }
+}
+
+.modal-wrapper {
+  background-image: url("../../images/image-hero-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100vw;
+  border: 1px solid red;
+}
+@media (min-width: 800px) {
+  .modal-wrapper {
+    background-image: url("../../images/image-hero-desktop.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 550px;
+  }
+}/*# sourceMappingURL=Modal.css.map */

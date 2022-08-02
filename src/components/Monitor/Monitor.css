@@ -1,1 +1,100 @@
-/*# sourceMappingURL=Monitor.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+}
+
+.hideOnMobile {
+  display: none;
+}
+@media (min-width: 800px) {
+  .hideOnMobile {
+    display: block;
+  }
+}
+
+.pad {
+  padding: 0 30px;
+}
+@media (min-width: 800px) {
+  .pad {
+    padding: 0 100px;
+  }
+}
+
+.monitor-wrapper {
+  text-align: center;
+  background-color: white;
+  width: 68vw;
+  margin: auto;
+  border-radius: 12px;
+  padding: 20px 40px;
+  position: relative;
+  margin-top: 300px;
+  box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+}
+@media (min-width: 800px) {
+  .monitor-wrapper {
+    width: 50vw;
+    padding: 20px 60px;
+  }
+}
+.monitor-wrapper .monitor-icon {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: -50px;
+}
+.monitor-wrapper .monitor-icon img {
+  width: 90px;
+}
+.monitor-wrapper .heading {
+  margin-top: 60px;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+@media (min-width: 800px) {
+  .monitor-wrapper .heading {
+    font-size: 2.5rem;
+  }
+}
+.monitor-wrapper .body {
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 48%);
+}
+@media (min-width: 800px) {
+  .monitor-wrapper .body {
+    font-size: 1.5rem;
+  }
+}
+.monitor-wrapper .bookmark {
+  display: flex;
+  justify-content: space-between;
+}
+.monitor-wrapper .bookmark .btn {
+  background-color: hsl(176deg, 50%, 47%);
+  border-radius: 50px;
+  border: none;
+  padding: 5px 35px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+@media (min-width: 400px) {
+  .monitor-wrapper .bookmark .btn {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 700px) {
+  .monitor-wrapper .bookmark .btn {
+    font-size: 1.5rem;
+  }
+}
+.monitor-wrapper .bookmark .bookmark-icon img {
+  width: 70px;
+}/*# sourceMappingURL=Monitor.css.map */

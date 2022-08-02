@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;800&display=swap');
+
+
+$ModerateCyan: hsl(176, 50%, 47%);
+$DarkCyan: hsl(176, 72%, 28%);
+$Black: hsl(0, 0%, 0%);
+$LightGray: hsl(0, 5%, 84%);
+$DarkGray: hsl(0, 0%, 48%);
+$Headerweight: 800;
+$Buttonweight: 700;
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+}
+
+.hideOnMobile {
+    display: none;
+
+    @media (min-width:800px) {
+        display: block;
+    }
+}
+
+
+
+.pad {
+    padding: 0 30px;
+
+    @media (min-width:800px) {
+        padding: 0 100px;
+    }
+}
+
+.monitor-wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 68vw;
+    margin: auto;
+    border-radius: 12px;
+    padding: 20px 40px;
+    position: relative;
+    margin-top: 300px;
+    box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+    -webkit-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+
+    @media (min-width:800px) {
+        width: 50vw;
+        padding: 20px 60px;
+    }
+
+    .monitor-icon {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: -50px;
+        // border: 1px solid red;
+
+        img {
+            width: 90px;
+        }
+    }
+
+    .heading {
+        margin-top: 60px;
+        font-size: 1.6rem;
+        margin-bottom: 0;
+
+        @media (min-width:800px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    .body {
+        font-size: 1.2rem;
+        color: $DarkGray;
+
+        @media (min-width:800px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .bookmark {
+        display: flex;
+        justify-content: space-between;
+
+        .btn {
+            background-color: $ModerateCyan;
+            border-radius: 50px;
+            border: none;
+            padding: 5px 35px;
+            font-size: .8rem;
+            font-weight: $Buttonweight;
+            color: white;
+
+            @media (min-width:400px) {
+                font-size: 1rem;
+            }
+
+            @media (min-width:700px) {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .bookmark-icon img {
+            width: 70px;
+        }
+
+        // .bookmark-text {
+        //     display: flex;
+        //     align-items: center;
+        //     padding: 20px 30px;
+        //     background-color: $LightGray;
+        //     border-top-right-radius: 40px;
+        //     border-bottom-right-radius: 40px;
+        // }
+
+    }
+}
