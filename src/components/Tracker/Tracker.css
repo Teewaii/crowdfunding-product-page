@@ -21,19 +21,18 @@ body {
   background-color: white;
   border: 1px solid hsl(195deg, 17%, 91%);
   width: 68vw;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 12px;
   padding: 20px 40px;
   position: relative;
-  margin-top: 300px;
-  box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
-  -webkit-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
-  -moz-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+  box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+  -webkit-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+  -moz-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
 }
 @media (min-width: 800px) {
   .tracker-wrapper {
     width: 50vw;
-    padding: 20px 60px;
+    padding: 20px 50px;
   }
 }
 .tracker-wrapper .heading {
@@ -42,6 +41,7 @@ body {
 .tracker-wrapper .backed:after {
   content: " ";
   background-color: red;
-  height: 20px;
-  width: 500px;
+  height: 5px;
+  width: 100px;
+  border-bottom: 1px solid green;
 }/*# sourceMappingURL=Tracker.css.map */

@@ -26,8 +26,6 @@ body {
     }
 }
 
-
-
 .monitor-wrapper {
     // display: flex;
     // flex-direction: column;
@@ -37,18 +35,18 @@ body {
     border: 1px solid $LightGray;
     width: 68vw;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     border-radius: 12px;
     padding: 30px 40px;
     position: relative;
-    margin-top: 370px;
-    box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
-    -webkit-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
-    -moz-box-shadow: -8px 12px 8px -5px rgba(0, 0, 0, 0.11);
+    margin-top: 320px;
+    box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+    -webkit-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+    -moz-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
 
     @media (min-width:800px) {
         width: 50vw;
-        padding: 20px 60px;
+        padding: 20px 50px 40px 50px;
     }
 
     .monitor-icon {
@@ -64,7 +62,7 @@ body {
     }
 
     .heading {
-        margin-top: 60px;
+        margin-top: 40px;
         font-size: 1.6rem;
         margin-bottom: 0;
 
@@ -108,19 +106,21 @@ body {
 
         }
 
-        .bookmark-icon  {
+        .bookmark-icon {
             position: relative;
             cursor: pointer;
-           
+
             @media (min-width:700px) {
                 display: flex;
                 align-items: center;
             }
-            
-            
+
+
         }
+
         .bookmark-icon img {
             width: 70px;
+
             @media (min-width:700px) {
                 width: 65px;
                 margin-right: -70px;
@@ -136,17 +136,18 @@ body {
             padding: 8px 20px;
             background-color: $LightGray;
             border-radius: 40px;
+
             @media (min-width:700px) {
                 display: flex;
 
-                h1{
+                h1 {
                     font-size: 1rem;
                     margin-left: 40px;
                 }
             }
 
-        // }
+            // }
 
+        }
     }
-}
 }
