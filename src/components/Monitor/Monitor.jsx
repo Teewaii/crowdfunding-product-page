@@ -15,8 +15,11 @@ export default function Monitor() {
                 <button className="btn">Back this project</button>
                 <div className="bookmark-icon">
                     <img src={bookmarkIcon} alt="" />
+                    <div className="bookmark-text hideOnMobile">
+                        <h1>Bookmark</h1>
+                    </div>
                 </div>
-                <div className="bookmark-text hideOnMobile">Bookmark</div>
+                
             </div>
         </div>
 
