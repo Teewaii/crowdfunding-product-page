@@ -53,6 +53,7 @@ body {
 
     .list-items {
 
+        @media (max-width:798px) {
         flex-direction: column;
         align-items: flex-start;
         background-color: white;
@@ -61,16 +62,17 @@ body {
         left: 0;
         right: 0;
         top: 120%;
-        width: 350px;
-        padding: 40px 0;
-        height: 25vh;
+        width: 68vw;
+         padding: 30px 40px;
+        max-height: 22vh;
         margin: 0 auto;
         z-index: 4;
         overflow: hidden;
+        transition: width 2s;
 
         li {
             list-style: none;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: $Buttonweight;
             margin-bottom: 65px;
             position: relative;
@@ -79,10 +81,10 @@ body {
                 content: "";
                 background-color: rgb(222, 213, 213);
                 height: 1px;
-                width: 450px;
+                width: 800px;
                 position: absolute;
-                left: 0;
-                top: 82px;
+                left: -70px;
+                top: 55px;
             }
 
         }
@@ -90,9 +92,9 @@ body {
         a {
             text-decoration: none;
             color: black;
-            padding: 0 40px;
+            // padding: 0 40px;
         }
-
+    }
         // desktop
         @media (min-width:800px) {
             display: flex;

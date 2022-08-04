@@ -47,18 +47,67 @@ body {
 
     .heading {
         font-size: 3rem;
+        margin-bottom: -15px;
+        
     }
 
-    .backed {
+    
+    .border{
         // border-bottom: 1px solid gray;
-    }
-
-    .backed:after {
+        position: relative;
+        
+    
+        &:nth-child(2):after, &:nth-child(3):after {
         content: ' ';
-        background-color: red;
-        height: 5px;
-        width: 100px;
-        border-bottom: 1px solid green;
-
+        background-color: $LightGray;
+        height: 2px;
+        width: 130px;
+        position: absolute;
+        right: 30%;
+        top: -11px;
     }
 }
+
+.body {
+    font-size:1.2rem;
+    color: $DarkGray;
+
+    @media (min-width:800px) {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:800px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;    
+    
+    .border{
+        // border-bottom: 1px solid gray;
+        position: relative;
+    
+    &:nth-child(2):after, &:nth-child(3):after {
+        content: ' ';
+        background-color: $LightGray;
+        height: 80px;
+        width: 2px;
+        position: absolute;
+        left: -18%;
+        top: 30px;
+        
+    }
+        
+    }
+    .body {
+        font-size:
+        clamp(1rem,2.5vw, 1.3rem);
+        color: $DarkGray;
+    }   
+    .heading{
+        font-size:
+        clamp(1.8rem,2.5vw, 3rem);
+    } 
+}
+}
+

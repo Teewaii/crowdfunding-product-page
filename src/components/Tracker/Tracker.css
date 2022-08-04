@@ -37,11 +37,53 @@ body {
 }
 .tracker-wrapper .heading {
   font-size: 3rem;
+  margin-bottom: -15px;
 }
-.tracker-wrapper .backed:after {
+.tracker-wrapper .border {
+  position: relative;
+}
+.tracker-wrapper .border:nth-child(2):after, .tracker-wrapper .border:nth-child(3):after {
   content: " ";
-  background-color: red;
-  height: 5px;
-  width: 100px;
-  border-bottom: 1px solid green;
+  background-color: hsl(195deg, 17%, 91%);
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  right: 30%;
+  top: -11px;
+}
+.tracker-wrapper .body {
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 48%);
+}
+@media (min-width: 800px) {
+  .tracker-wrapper .body {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .tracker-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+  .tracker-wrapper .border {
+    position: relative;
+  }
+  .tracker-wrapper .border:nth-child(2):after, .tracker-wrapper .border:nth-child(3):after {
+    content: " ";
+    background-color: hsl(195deg, 17%, 91%);
+    height: 80px;
+    width: 2px;
+    position: absolute;
+    left: -18%;
+    top: 30px;
+  }
+  .tracker-wrapper .body {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: hsl(0deg, 0%, 48%);
+  }
+  .tracker-wrapper .heading {
+    font-size: clamp(1.8rem, 2.5vw, 3rem);
+  }
 }/*# sourceMappingURL=Tracker.css.map */
