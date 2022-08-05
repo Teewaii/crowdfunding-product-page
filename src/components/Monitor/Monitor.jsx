@@ -1,5 +1,6 @@
 import React from 'react'
 import './Monitor.css'
+import '../btn/btn.css'
 import icon from '../../images/logo-mastercraft.svg'
 import bookmarkIcon from '../../images/icon-bookmark.svg'
 export default function Monitor() {
@@ -19,7 +20,7 @@ export default function Monitor() {
                         <h1>Bookmark</h1>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 

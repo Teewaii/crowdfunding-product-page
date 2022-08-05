@@ -1,0 +1,48 @@
+.reward {
+  background-color: hsl(176deg, 50%, 47%);
+  border-radius: 50px;
+  border: none;
+  padding: 25px 60px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+@media (min-width: 400px) {
+  .reward {
+    font-size: 0.8rem;
+    padding: 22px 50px;
+  }
+}
+@media (min-width: 700px) {
+  .reward {
+    font-size: 1.2rem;
+  }
+}
+.reward:hover {
+  background-color: hsl(176deg, 72%, 28%);
+}
+
+.btn {
+  background-color: hsl(176deg, 50%, 47%);
+  border-radius: 50px;
+  border: none;
+  padding: 5px 35px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+@media (min-width: 400px) {
+  .btn {
+    font-size: 0.8rem;
+    padding: 5px 40px;
+  }
+}
+@media (min-width: 700px) {
+  .btn {
+    font-size: 1.3rem;
+    padding: 12px 30px;
+  }
+}
+.btn:hover {
+  background-color: hsl(176deg, 72%, 28%);
+}/*# sourceMappingURL=btn.css.map */

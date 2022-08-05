@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;800&display=swap');
+
+
+$ModerateCyan: hsl(176, 50%, 47%);
+$DarkCyan: hsl(176, 72%, 28%);
+$Black: hsl(0, 0%, 0%);
+$LightGray: hsl(195, 17%, 91%);
+$DarkGray: hsl(0, 0%, 48%);
+$Headerweight: 800;
+$Buttonweight: 700;
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+}
+
+.pad {
+    padding: 0 30px;
+
+    @media (min-width:800px) {
+        padding: 0 100px;
+    }
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    background-color: white;
+    border: 1px solid $LightGray;
+    width: 68vw;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 20px 40px;
+    position: relative;
+    margin-bottom: 40px;
+
+    box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+    -webkit-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+    -moz-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+
+    @media (min-width:800px) {
+        width: 50vw;
+        padding: 20px 50px;
+        align-items: flex-start;
+    }
+
+    .heading {
+        margin-top: 40px;
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        text-align: left;
+
+        @media (min-width:800px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    .body {
+        font-size: 1.2rem;
+        color: $DarkGray;
+        line-height: 2.5rem;
+        margin-bottom: 50px;
+
+        @media (min-width:800px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+        background-color: white;
+        border: 2px solid $LightGray;
+        margin: 0 auto;
+        border-radius: 12px;
+        padding: 20px 40px;
+        position: relative;
+        margin-bottom: 20px;
+
+        .head,
+        .bottom {
+            .heading {
+                margin: 0;
+            }
+
+            .pledge {
+                color: $ModerateCyan;
+                font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+            }
+
+            @media (min-width:700px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .slots {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: $Buttonweight;
+
+        p {
+            font-size: 1rem;
+            color: $DarkGray;
+        }
+    }
+
+    .out-of-stock {
+        opacity: .4;
+
+        .reward {
+            background-color: $DarkGray;
+        }
+    }
+
+}

@@ -39,11 +39,11 @@ body {
     // margin-top: 20px;
     .logo {
 
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         color: white;
 
         @media (min-width:800px) {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
 
         font-weight: $Headerweight;
@@ -54,47 +54,48 @@ body {
     .list-items {
 
         @media (max-width:798px) {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: white;
-        border-radius: 10px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 120%;
-        width: 68vw;
-         padding: 30px 40px;
-        max-height: 22vh;
-        margin: 0 auto;
-        z-index: 4;
-        overflow: hidden;
-        transition: width 2s;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: white;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 120%;
+            width: 68vw;
+            padding: 30px 40px;
+            max-height: 22vh;
+            margin: 0 auto;
+            z-index: 4;
+            overflow: hidden;
+            transition: width 2s;
 
-        li {
-            list-style: none;
-            font-size: 1.5rem;
-            font-weight: $Buttonweight;
-            margin-bottom: 65px;
-            position: relative;
+            li {
+                list-style: none;
+                font-size: 1.5rem;
+                font-weight: $Buttonweight;
+                margin-bottom: 65px;
+                position: relative;
 
-            &:after {
-                content: "";
-                background-color: rgb(222, 213, 213);
-                height: 1px;
-                width: 800px;
-                position: absolute;
-                left: -70px;
-                top: 55px;
+                &:after {
+                    content: "";
+                    background-color: rgb(222, 213, 213);
+                    height: 1px;
+                    width: 800px;
+                    position: absolute;
+                    left: -70px;
+                    top: 55px;
+                }
+
             }
 
+            a {
+                text-decoration: none;
+                color: black;
+                // padding: 0 40px;
+            }
         }
 
-        a {
-            text-decoration: none;
-            color: black;
-            // padding: 0 40px;
-        }
-    }
         // desktop
         @media (min-width:800px) {
             display: flex;
@@ -102,7 +103,7 @@ body {
             li {
                 list-style: none;
                 margin-right: 30px;
-                font-size: .9rem;
+                font-size: 1.2rem;
             }
 
             a {

@@ -17,29 +17,20 @@ body {
     font-family: 'Commissioner', sans-serif;
     font-size: 16px;
     background-color: $Bkg;
-    height: 100vh;
-    max-width: 100vw;
+    min-height: 100vh;
 }
 
-// .pad {
-//     padding: 0 30px;
-
-//     @media (min-width:800px) {
-//         padding: 0 100px;
-//     }
-// }
 
 .modal-wrapper {
-    // display: flex;
-    // flex-direction: column;
     background-image: url("../../images/image-hero-mobile.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    // height: 500px;
     max-width: 100%;
     background-color: $Bkg;
-    // border: 1px solid red;
+    padding: 20px 0;
+    background-color: blue;
 
     @media (min-width:800px) {
         background-image: url("../../images/image-hero-desktop.jpg");

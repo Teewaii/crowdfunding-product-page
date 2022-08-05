@@ -1,0 +1,56 @@
+$ModerateCyan: hsl(176, 50%, 47%);
+$DarkCyan: hsl(176, 72%, 28%);
+$Black: hsl(0, 0%, 0%);
+$LightGray: hsl(195, 17%, 91%);
+$DarkGray: hsl(0, 0%, 48%);
+$Headerweight: 800;
+$Buttonweight: 700;
+
+
+
+.reward {
+    background-color: $ModerateCyan;
+    border-radius: 50px;
+    border: none;
+    padding: 25px 60px;
+    font-size: .8rem;
+    font-weight: $Buttonweight;
+    color: white;
+
+    @media (min-width:400px) {
+        font-size: .8rem;
+        padding: 22px 50px;
+    }
+
+    @media (min-width:700px) {
+        font-size: 1.2rem;
+    }
+
+    &:hover {
+        background-color: $DarkCyan;
+    }
+}
+
+.btn {
+    background-color: $ModerateCyan;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 35px;
+    font-size: .8rem;
+    font-weight: $Buttonweight;
+    color: white;
+
+    @media (min-width:400px) {
+        font-size: .8rem;
+        padding: 5px 40px;
+    }
+
+    @media (min-width:700px) {
+        font-size: 1.3rem;
+        padding: 12px 30px;
+    }
+
+    &:hover {
+        background-color: $DarkCyan;
+    }
+}

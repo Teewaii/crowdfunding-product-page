@@ -2,7 +2,7 @@
 
 
 $ModerateCyan: hsl(176, 50%, 47%);
-$DarkCyan: hsl(176, 72%, 28%);
+$DarkCyan: hwb(176 8% 52%);
 $Black: hsl(0, 0%, 0%);
 $LightGray: hsl(195, 17%, 91%);
 $DarkGray: hsl(0, 0%, 48%);
@@ -35,7 +35,7 @@ body {
     border: 1px solid $LightGray;
     width: 68vw;
     margin: auto;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     border-radius: 12px;
     padding: 30px 40px;
     position: relative;
@@ -74,6 +74,7 @@ body {
     .body {
         font-size: 1.2rem;
         color: $DarkGray;
+        line-height: 2.5rem;
         margin-bottom: 40px;
 
         @media (min-width:800px) {
@@ -85,26 +86,6 @@ body {
         display: flex;
         justify-content: space-between;
 
-
-        .btn {
-            background-color: $ModerateCyan;
-            border-radius: 50px;
-            border: none;
-            padding: 5px 35px;
-            font-size: .8rem;
-            font-weight: $Buttonweight;
-            color: white;
-
-            @media (min-width:400px) {
-                font-size: .8rem;
-                padding: 5px 40px;
-            }
-
-            @media (min-width:700px) {
-                font-size: 1.3rem;
-            }
-
-        }
 
         .bookmark-icon {
             position: relative;
@@ -121,6 +102,11 @@ body {
         .bookmark-icon img {
             width: 70px;
 
+            &:hover {
+                color: $DarkCyan;
+                filter: invert(1);
+            }
+
             @media (min-width:700px) {
                 width: 65px;
                 margin-right: -70px;
@@ -136,6 +122,10 @@ body {
             padding: 8px 20px;
             background-color: $LightGray;
             border-radius: 40px;
+
+            &:hover {
+                color: $DarkCyan;
+            }
 
             @media (min-width:700px) {
                 display: flex;

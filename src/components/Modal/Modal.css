@@ -6,8 +6,7 @@ body {
   font-family: "Commissioner", sans-serif;
   font-size: 16px;
   background-color: hwb(0 94% 6%);
-  height: 100vh;
-  max-width: 100vw;
+  min-height: 100vh;
 }
 
 .modal-wrapper {
@@ -15,9 +14,10 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
   max-width: 100%;
   background-color: hwb(0 94% 6%);
+  padding: 20px 0;
+  background-color: blue;
 }
 @media (min-width: 800px) {
   .modal-wrapper {

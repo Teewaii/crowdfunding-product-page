@@ -17,12 +17,16 @@ body {
 }
 
 .tracker-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   background-color: white;
   border: 1px solid hsl(195deg, 17%, 91%);
   width: 68vw;
   margin: 0 auto;
   border-radius: 12px;
+  margin-bottom: 20px;
   padding: 20px 40px;
   position: relative;
   box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
@@ -33,16 +37,20 @@ body {
   .tracker-wrapper {
     width: 50vw;
     padding: 20px 50px;
+    align-items: flex-start;
   }
 }
-.tracker-wrapper .heading {
+.tracker-wrapper .tracks {
+  margin-bottom: 30px;
+}
+.tracker-wrapper .tracks .heading {
   font-size: 3rem;
   margin-bottom: -15px;
 }
-.tracker-wrapper .border {
+.tracker-wrapper .tracks .border {
   position: relative;
 }
-.tracker-wrapper .border:nth-child(2):after, .tracker-wrapper .border:nth-child(3):after {
+.tracker-wrapper .tracks .border:nth-child(2):after, .tracker-wrapper .tracks .border:nth-child(3):after {
   content: " ";
   background-color: hsl(195deg, 17%, 91%);
   height: 2px;
@@ -51,26 +59,26 @@ body {
   right: 30%;
   top: -11px;
 }
-.tracker-wrapper .body {
+.tracker-wrapper .tracks .body {
   font-size: 1.2rem;
   color: hsl(0deg, 0%, 48%);
 }
 @media (min-width: 800px) {
-  .tracker-wrapper .body {
+  .tracker-wrapper .tracks .body {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 800px) {
-  .tracker-wrapper {
+  .tracker-wrapper .tracks {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 60px;
   }
-  .tracker-wrapper .border {
+  .tracker-wrapper .tracks .border {
     position: relative;
   }
-  .tracker-wrapper .border:nth-child(2):after, .tracker-wrapper .border:nth-child(3):after {
+  .tracker-wrapper .tracks .border:nth-child(2):after, .tracker-wrapper .tracks .border:nth-child(3):after {
     content: " ";
     background-color: hsl(195deg, 17%, 91%);
     height: 80px;
@@ -79,11 +87,25 @@ body {
     left: -18%;
     top: 30px;
   }
-  .tracker-wrapper .body {
+  .tracker-wrapper .tracks .body {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
     color: hsl(0deg, 0%, 48%);
   }
-  .tracker-wrapper .heading {
+  .tracker-wrapper .tracks .heading {
     font-size: clamp(1.8rem, 2.5vw, 3rem);
   }
+}
+.tracker-wrapper .progress-container {
+  width: 95%;
+  height: 16px;
+  border-radius: 10px;
+  background-color: hsl(195deg, 17%, 91%);
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.tracker-wrapper .progress-bar {
+  background-color: hsl(176deg, 50%, 47%);
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
 }/*# sourceMappingURL=Tracker.css.map */
