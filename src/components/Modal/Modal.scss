@@ -26,11 +26,10 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    // height: 500px;
+    height: 500px;
     max-width: 100%;
     background-color: $Bkg;
     padding: 20px 0;
-    background-color: blue;
 
     @media (min-width:800px) {
         background-image: url("../../images/image-hero-desktop.jpg");

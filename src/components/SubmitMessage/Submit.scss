@@ -35,15 +35,20 @@ body {
     text-align: center;
     background-color: white;
     border: 1px solid $LightGray;
-    width: 35vw;
+    max-width: 68vw;
     margin: 0 auto;
     border-radius: 12px;
-    padding: 20px 40px;
+    padding: 40px 15px;
     position: absolute;
     left: 0;
     right: 0;
-    top: 70%;
+    top: 5%;
     z-index: 9;
+
+    @media (min-width:800px) {
+        max-width: 30vw;
+        top: 45%;
+    }
 
     .heading {
         margin-top: 40px;
