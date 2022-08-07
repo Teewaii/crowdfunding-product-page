@@ -1,0 +1,20 @@
+$ModerateCyan: hsl(176, 50%, 47%);
+$DarkCyan: hsl(176, 72%, 28%);
+$Black: hsl(0, 0%, 0%);
+$LightGray: hsl(195, 17%, 91%);
+$DarkGray: hsl(0, 0%, 48%);
+$Headerweight: 800;
+$Buttonweight: 700;
+
+
+
+.amount {
+    border-radius: 50px;
+    border: 1px solid $LightGray;
+    padding: 20px 10px;
+    font-size: .8rem;
+    max-width: 80px;
+    font-weight: $Buttonweight;
+    color: $DarkGray;
+    margin-right: 20px;
+}

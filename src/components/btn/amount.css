@@ -1,0 +1,10 @@
+.amount {
+  border-radius: 50px;
+  border: 1px solid hsl(195deg, 17%, 91%);
+  padding: 20px 10px;
+  font-size: 0.8rem;
+  max-width: 80px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 48%);
+  margin-right: 20px;
+}/*# sourceMappingURL=amount.css.map */
