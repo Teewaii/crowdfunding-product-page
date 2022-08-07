@@ -26,7 +26,8 @@ body {
     }
 }
 
-.pledges-wrapper { display: flex;
+.pledges-wrapper {
+    display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
@@ -44,19 +45,21 @@ body {
     left: 0;
     right: 0;
 
-    
+
 
     @media (min-width:800px) {
         width: 50vw;
         padding: 20px 50px;
         align-items: flex-start;
     }
-    
+
     background-color: white;
+
     label {
         font-size: 1.2rem;
         font-weight: $Buttonweight;
-        &:hover{
+
+        &:hover {
             color: $ModerateCyan;
         }
     }
@@ -64,9 +67,10 @@ body {
     input[type='radio'] {
         transform: scale(2);
         margin-right: 1.2rem;
+
     }
 
-    .Modalhead{
+    .Modalhead {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -74,7 +78,7 @@ body {
         width: 100%;
     }
 
-    .card {
+    .pledge-card {
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -83,9 +87,10 @@ body {
         border: 2px solid $LightGray;
         margin: 0 auto;
         border-radius: 12px;
-        padding: 30px 30px 40px 30px;
+        padding: 30px 10px 40px 10px;
         position: relative;
         margin-bottom: 20px;
+        overflow-x: hidden;
 
         .head,
         .bottom {
@@ -94,7 +99,7 @@ body {
 
             }
 
-            
+
 
             .pledge {
                 color: $ModerateCyan;
@@ -102,7 +107,7 @@ body {
                 margin-left: 2.5rem;
             }
 
-            @media (min-width:700px) {
+            @media (min-width:900px) {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -113,77 +118,102 @@ body {
             font-size: 1.2rem;
             color: $DarkGray;
             line-height: 1.8rem;
-            margin-bottom: 80px;
-    
+            margin-bottom: 150px;
+
             @media (min-width:800px) {
                 font-size: 1.5rem;
                 margin-bottom: 50px;
             }
 
-    }
+        }
 
 
-    .slots {
-        @media (max-width:800px) {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 1rem;
-        font-weight: $Buttonweight;
-        position: absolute;
-        bottom: 35%;
-        &::after{
-            content: '';
-            position: absolute;
-            bottom: 10px;
-            height: 2px;
-            background-color: red;
-            bottom: 2%;
-            left: -30px;
-            width: 338px;
-        }
-        }
-        
+        .slots {
+            @media (max-width:800px) {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 1rem;
+                font-weight: $Buttonweight;
+                position: absolute;
+                bottom: 35%;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 10px;
+                    height: 2px;
+                    background-color: $LightGray;
+                    bottom: 2%;
+                    left: -90px;
+                    right: 0;
+                    width: 800px;
+                }
+            }
+
             display: flex;
             align-items: center;
             gap: 5px;
             font-size: 1rem;
             font-weight: $Buttonweight;
-        
 
-        p {
-            font-size: 1rem;
-            color: $DarkGray;
+
+            p {
+                font-size: 1rem;
+                color: $DarkGray;
+            }
+        }
+
+        .hide {
+            display: none;
+        }
+
+        @media (min-width:800px) {
+            padding: 15px 30px;
+        }
+
+        @media (min-width:900px) {
+            margin-bottom: 90px;
+            padding: 30px 10px 70px 10px;
+
+            .body {
+                margin-bottom: 90px;
+            }
         }
     }
 
-    .hide{
-        display: none;
-    }
-    @media (min-width:800px) {
-    padding:15px 30px;
-    }
-    }
+    .bottom {
 
-    .bottom{
-        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border: 1px solid blue;
         align-items: center;
-        border: 1px solid rgb(0, 38, 255);
-        padding: 0;
-        .pledge-container{
-         display: flex;
+        margin-top: -37px;
         width: 100%;
-        justify-content: space-between;
-        align-items: center;
 
-transform: scale(.8);   
+        @media (min-width:900px) {
+            flex-direction: row;
+
+            .Enter {
+                width: 100%;
+            }
+        }
+
+        .pledge-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            transform: scale(.9);
+
+            @media (min-width:900px) {
+                justify-content: flex-end;
+
+            }
         }
     }
 
-//   .pay{
-//     padding: 15px 20px;
-//   }
+
 }

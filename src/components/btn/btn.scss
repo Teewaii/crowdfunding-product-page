@@ -11,7 +11,8 @@ $Buttonweight: 700;
 .reward {
     background-color: $ModerateCyan;
     border-radius: 50px;
-    border: none;overflow-x: auto ;
+    border: none;
+    overflow-x: auto;
     padding: 25px 60px;
     font-size: .8rem;
     font-weight: $Buttonweight;
@@ -31,11 +32,12 @@ $Buttonweight: 700;
     }
 }
 
- .continue {
+.continue {
     background-color: $ModerateCyan;
     border-radius: 50px;
-    border: none;overflow-x: auto ;
-    padding: 25px 35px;
+    border: none;
+    overflow-x: auto;
+    padding: 20px 35px;
     font-size: .8rem;
     font-weight: $Buttonweight;
     color: white;
@@ -77,4 +79,3 @@ $Buttonweight: 700;
         background-color: $DarkCyan;
     }
 }
-
