@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+Modal.setAppElement('#root');
 function App() {
   return (
     <div className="App">

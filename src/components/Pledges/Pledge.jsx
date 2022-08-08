@@ -25,10 +25,6 @@ export default function Pledge() {
                         <input type="radio" name="pledge" id='No-reward' value='No Reward' />
                         Pledge with no reward
                     </label>
-                    <div className="slots">
-                        <h1 className="num">101</h1>
-                        <p>left</p>
-                    </div>
 
                 </div>
                 <p className="body">Choose to support us without a reward if you simply believe in our project. As a backer,
@@ -57,7 +53,8 @@ export default function Pledge() {
                     <p className='Enter'>Enter your pledge</p>
                     <div className="pledge-container">
                         <form method="post" action="#">
-                            <input type="number" min='25' placeholder='$' className='amount' />
+                            <span>$</span>
+                            <input type="number" min='25'  className='amount' />
                         </form>
                         <button className="continue">Continue</button>
                     </div>
@@ -86,7 +83,8 @@ export default function Pledge() {
                     <p className='Enter'>Enter your pledge</p>
                     <div className="pledge-container">
                         <form method="post" action="#">
-                            <input type="number" min='75' placeholder='$' className='amount' />
+                        <span>$</span>
+                            <input type="number" min='75' className='amount' />
                         </form>
                         <button className="continue">Continue</button>
                     </div>
@@ -115,7 +113,8 @@ export default function Pledge() {
                     <p className='Enter'>Enter your pledge</p>
                     <div className="pledge-container">
                         <form method="post" action="#">
-                            <input type="number" min='200' placeholder='$' className='amount' />
+                        <span>$</span>
+                            <input type="number" min='200'  className='amount' />
                         </form>
                         <button className="continue">Continue</button>
                     </div>

@@ -41,10 +41,15 @@ body {
     position: relative;
     margin-top: 40%;
     position: absolute;
-    z-index: 100;
+    z-index: 800;
     left: 0;
     right: 0;
-
+    // .openPledge{
+    //     max-height: 300px;
+    //     .slots{
+    //         margin-bottom: -90px;
+    //     }
+    //   }
 
 
     @media (min-width:800px) {
@@ -53,21 +58,55 @@ body {
         align-items: flex-start;
     }
 
-    background-color: white;
-
     label {
         font-size: 1.2rem;
         font-weight: $Buttonweight;
+        position: relative;
 
         &:hover {
             color: $ModerateCyan;
         }
+
+        // .rad{
+        //     position: absolute;
+        //     width: 1rem;
+        //     height: 1rem;
+        //     left: 1px;
+        //     top: 2px;
+        //     background-color: transparent;
+        //     border: 1px solid $ModerateCyan;
+        //     border-radius: 50px;
+        //     display: inline-flex;
+        //     padding: 3px;
+        //   transform: scale(0);
+
+        //     &::after{
+        //         content: '';
+        //         display: block;
+        //         width: 100%;
+        //         height: 100%;
+        //         background-color:$ModerateCyan;
+        //         border-radius: 50px;
+        //     }
+        // }
     }
 
     input[type='radio'] {
         transform: scale(2);
         margin-right: 1.2rem;
+        font-size: 1.5rem;
 
+        // &:checked + .pad::after{
+        //     transform: scale(1);
+        // }
+    }
+
+   
+
+    input[type='number']{
+        font-size: 1.3rem;
+        padding-left: 35px;
+        color: black
     }
 
     .Modalhead {
@@ -76,6 +115,8 @@ body {
         align-items: center;
         cursor: pointer;
         width: 100%;
+
+      
     }
 
     .pledge-card {
@@ -87,10 +128,20 @@ body {
         border: 2px solid $LightGray;
         margin: 0 auto;
         border-radius: 12px;
-        padding: 30px 10px 40px 10px;
+        padding: 30px 15px ;
         position: relative;
         margin-bottom: 20px;
         overflow-x: hidden;
+    
+
+        @media (min-width:900px) {
+            margin-bottom: 30px;
+            padding: 30px 10px 70px 10px;
+
+            .body {
+                margin-bottom: 90px;
+            }
+        }
 
         .head,
         .bottom {
@@ -115,28 +166,28 @@ body {
         }
 
         .body {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: $DarkGray;
             line-height: 1.8rem;
-            margin-bottom: 150px;
+            margin-bottom: 10px;
 
             @media (min-width:800px) {
                 font-size: 1.5rem;
-                margin-bottom: 50px;
+                margin-bottom: 90px;
             }
 
         }
 
 
         .slots {
-            @media (max-width:800px) {
+            
                 display: flex;
                 align-items: center;
                 gap: 5px;
                 font-size: 1rem;
                 font-weight: $Buttonweight;
                 position: absolute;
-                bottom: 35%;
+                bottom: 30%;
 
                 &::after {
                     content: '';
@@ -147,9 +198,9 @@ body {
                     bottom: 2%;
                     left: -90px;
                     right: 0;
-                    width: 800px;
+                    width: 1200px;
                 }
-            }
+            
 
             display: flex;
             align-items: center;
@@ -171,15 +222,10 @@ body {
         @media (min-width:800px) {
             padding: 15px 30px;
         }
-
-        @media (min-width:900px) {
-            margin-bottom: 90px;
-            padding: 30px 10px 70px 10px;
-
-            .body {
-                margin-bottom: 90px;
-            }
-        }
+&:hover{
+    border: 2px solid $ModerateCyan;
+    
+}
     }
 
     .bottom {
@@ -187,14 +233,13 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 1px solid blue;
         align-items: center;
-        margin-top: -37px;
+        margin-top: 90px;
         width: 100%;
-
+        
         @media (min-width:900px) {
             flex-direction: row;
-
+            margin-top: 50px;
             .Enter {
                 width: 100%;
             }
