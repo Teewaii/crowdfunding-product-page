@@ -3,17 +3,17 @@ import '../btn/btn.css'
 import './Pledge.css'
 import '../btn/amount.css'
 import closeModalIcon from '../../images/icon-close-modal.svg'
-export default function Pledge() {
-    const [closeModal, setCloseModal] = useState(true)
+export default function Pledge({closeModal}) {
+    // const [closeModal, setCloseModal] = useState(true)
 
-    function handleClick() {
-        setCloseModal(prev => !prev)
-    }
+    // function handleClick() {
+    //     setCloseModal(prev => !prev)
+    // }
     return (
-        <div className={closeModal ? "pledges-wrapper pad" : "hide"}>
+        <div className="pledges-wrapper pad">
             <div className="Modalhead ">
                 <h1 className="heading">Back this project</h1>
-                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" onClick={handleClick} />
+                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" onClick={()=>closeModal(false)} />
             </div>
             <p className='body'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 

@@ -1,9 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
+// import Modal from 'react-modal'
 import './About.css'
 import '../btn/btn.css'
+import Pledge from '../Pledges/Pledge'
 // import '../Card/Card.css'
 
 export default function About() {
+    // const [modalIsOpen, setIsOpen] = useState(false)
+
+    // function openModal (){
+    //     setIsOpen(true);
+    // }
+    // function closeModal (){
+    //     setIsOpen(false);
+    // }
+
+
     return (
         <div className="about-wrapper pad">
             <h1 className="heading">About this project</h1>
@@ -60,6 +72,9 @@ export default function About() {
                     <button className="reward">Out of Stock</button>
                 </div>
             </div>
+            {/* <Modal isOpen={openModal}>
+               <Pledge/> 
+            </Modal> */}
         </div>
     )
 }
