@@ -3,7 +3,7 @@ import './Nav.css'
 import hamb from "../../images/icon-hamburger.svg"
 import closeMenu from "../../images/icon-close-menu.svg"
 
-export default function Nav({coseModal}) {
+export default function Nav({active, deactive}) {
 
   const [toggle, setToggle] = useState(false)
   const [closeIcon, setCloseIcon] = useState(false)
@@ -12,13 +12,15 @@ export default function Nav({coseModal}) {
     return true
   }
   function toggleMenu() {
+    active()
     setToggle(prevToggle => !prevToggle)
     setCloseIcon(prevClose => !prevClose)
-    closeModal()
+    
   }
   function closMenu() {
     setToggle(prevToggle => !prevToggle)
     setCloseIcon(prevClose => !prevClose)
+    deactive()
   }
 
 

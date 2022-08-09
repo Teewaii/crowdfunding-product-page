@@ -22,11 +22,17 @@ export default function Modal() {
 
 
 
-      <Nav />
+      <Nav 
+      active={handleClick}
+      deactive={closeModal}
+      />
+      
       {/* {modal && <Pledge closeModal={setModal}/>} */}
       <Monitor />
       <Tracker />
-      <About />
+      <About
+      active={handleClick}
+      />
       {/* {modal &&<div className="overlay" onClick={handleClick}></div>} */}
       {modal &&<div className="overlay" onClick={handleClick}></div>}
     </div>

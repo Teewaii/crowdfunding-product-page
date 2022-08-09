@@ -113,9 +113,11 @@ body {
         }
     }
 
-    .mobile-menu img {
+    .mobile-menu img {        
+        position: relative;
         width: 30px;
         height: 30px;
+        z-index: 13;
 
 
         @media (min-width:800px) {

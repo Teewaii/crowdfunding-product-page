@@ -5,15 +5,14 @@ import '../btn/btn.css'
 import Pledge from '../Pledges/Pledge'
 // import '../Card/Card.css'
 
-export default function About() {
-    // const [modalIsOpen, setIsOpen] = useState(false)
-
-    // function openModal (){
-    //     setIsOpen(true);
-    // }
-    // function closeModal (){
-    //     setIsOpen(false);
-    // }
+export default function About({active, deactive}) {
+   
+    function openPledge(){
+        return(
+        <Pledge/>
+        // active()
+        )
+    }
 
 
     return (
@@ -37,7 +36,7 @@ export default function About() {
                         <h1 className="num">101</h1>
                         <p>left</p>
                     </div>
-                    <button className="reward">Select Reward</button>
+                    <button className="reward" onClick={openPledge}>Select Reward</button>
                 </div>
             </div>
 
