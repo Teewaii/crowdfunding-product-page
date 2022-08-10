@@ -28,7 +28,7 @@ body {
   position: relative;
 }
 .Nav-bar .logo {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: 800;
 }
@@ -47,13 +47,12 @@ body {
     left: 0;
     right: 0;
     top: 120%;
-    width: 68vw;
+    width: 65vw;
     padding: 30px 40px;
     max-height: 25vh;
     margin: 0 auto;
     z-index: 4;
     overflow: hidden;
-    transition: width 2s;
   }
   .Nav-bar .list-items li {
     list-style: none;
@@ -92,8 +91,8 @@ body {
 }
 .Nav-bar .mobile-menu img {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   z-index: 13;
 }
 @media (min-width: 800px) {

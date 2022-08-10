@@ -13,14 +13,14 @@ $Buttonweight: 700;
     border-radius: 50px;
     border: none;
     overflow-x: auto;
-    padding: 25px 60px;
+    padding: 25px 40px;
     font-size: .8rem;
     font-weight: $Buttonweight;
     color: white;
 
     @media (min-width:400px) {
         font-size: .8rem;
-        padding: 22px 50px;
+        padding: 22px 40px;
     }
 
     @media (min-width:700px) {
@@ -37,7 +37,7 @@ $Buttonweight: 700;
     border-radius: 50px;
     border: none;
     overflow-x: auto;
-    padding: 20px 35px;
+    padding: 20px 40px;
     font-size: .8rem;
     font-weight: $Buttonweight;
     color: white;

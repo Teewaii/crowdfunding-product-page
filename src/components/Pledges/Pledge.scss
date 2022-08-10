@@ -107,7 +107,11 @@ body {
     input[type='number']{
         font-size: 1.3rem;
         padding-left: 35px;
-        color: black
+        color: black;
+        margin-bottom: 12px;
+        @media (min-width:900px) {
+            margin-bottom: 0;
+        }
     }
 
     .Modalhead {
@@ -150,9 +154,6 @@ body {
                 margin: 0;
 
             }
-
-
-
             .pledge {
                 color: $ModerateCyan;
                 font-size: clamp(1rem, 2.5vw, 1.3rem);
@@ -248,13 +249,15 @@ body {
 
         .pledge-container {
             display: flex;
+            flex-direction: column;
             width: 100%;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            align-items: flex-start;           
 
-            transform: scale(.9);
+            // transform: scale(.9);
 
             @media (min-width:900px) {
+                flex-direction: row;
                 justify-content: flex-end;
 
             }

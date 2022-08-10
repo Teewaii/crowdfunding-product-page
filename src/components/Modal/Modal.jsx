@@ -7,13 +7,18 @@ import About from '../About/About'
 import Pledge from '../Pledges/Pledge'
 
 export default function Modal() {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
+  const [pledge, setPledge] = useState(false);
+  // const [closeIcon, setCloseIcon] = useState(false);
 
   function handleClick() {
     setModal(!modal)
+    setPledge(false)
+    // setCloseIcon(false)
   }
   function closeModal() {
     setModal(false)
+    // setCloseIcon(true)
   }
   return (
     
@@ -25,15 +30,24 @@ export default function Modal() {
       <Nav 
       active={handleClick}
       deactive={closeModal}
+      // closemenu={setCloseIcon}
       />
       
-      {/* {modal && <Pledge closeModal={setModal}/>} */}
-      <Monitor />
+   {pledge && <Pledge 
+   closePledge={setPledge}
+   openPledge={setPledge}
+   deactive={closeModal}
+   />}
+      <Monitor 
+      openPledge={setPledge}
+      active={handleClick}
+      deactive={closeModal}/>
       <Tracker />
       <About
+      openPledge={setPledge}
       active={handleClick}
+      deactive={closeModal}
       />
-      {/* {modal &&<div className="overlay" onClick={handleClick}></div>} */}
       {modal &&<div className="overlay" onClick={handleClick}></div>}
     </div>
     

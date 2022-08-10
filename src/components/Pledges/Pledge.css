@@ -60,6 +60,12 @@ body {
   font-size: 1.3rem;
   padding-left: 35px;
   color: black;
+  margin-bottom: 12px;
+}
+@media (min-width: 900px) {
+  .pledges-wrapper input[type=number] {
+    margin-bottom: 0;
+  }
 }
 .pledges-wrapper .Modalhead {
   display: flex;
@@ -180,13 +186,14 @@ body {
 }
 .pledges-wrapper .bottom .pledge-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  transform: scale(0.9);
+  justify-content: center;
+  align-items: flex-start;
 }
 @media (min-width: 900px) {
   .pledges-wrapper .bottom .pledge-container {
+    flex-direction: row;
     justify-content: flex-end;
   }
 }/*# sourceMappingURL=Pledge.css.map */

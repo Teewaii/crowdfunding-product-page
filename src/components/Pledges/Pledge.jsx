@@ -3,17 +3,18 @@ import '../btn/btn.css'
 import './Pledge.css'
 import '../btn/amount.css'
 import closeModalIcon from '../../images/icon-close-modal.svg'
-export default function Pledge({closeModal}) {
+export default function Pledge({closeModal,deactive, closePledge}) {
     // const [closeModal, setCloseModal] = useState(true)
 
-    // function handleClick() {
-    //     setCloseModal(prev => !prev)
-    // }
+    function closP() {
+        closePledge(false);
+        deactive()
+    }
     return (
         <div className="pledges-wrapper pad">
             <div className="Modalhead ">
                 <h1 className="heading">Back this project</h1>
-                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" onClick={()=>closeModal(false)} />
+                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" onClick={closP} />
             </div>
             <p className='body'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
@@ -56,7 +57,7 @@ export default function Pledge({closeModal}) {
                             <span>$</span>
                             <input type="number" min='25'  className='amount' />
                         </form>
-                        <button className="continue">Continue</button>
+                        <button className="continue" >Continue</button>
                     </div>
                 </div>
             </div>

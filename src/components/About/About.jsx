@@ -5,13 +5,11 @@ import '../btn/btn.css'
 import Pledge from '../Pledges/Pledge'
 // import '../Card/Card.css'
 
-export default function About({active, deactive}) {
+export default function About({active, deactive,openPledge,closePledge}) {
    
-    function openPledge(){
-        return(
-        <Pledge/>
-        // active()
-        )
+    function openP(){
+        active();
+        openPledge(true)
     }
 
 
@@ -36,7 +34,7 @@ export default function About({active, deactive}) {
                         <h1 className="num">101</h1>
                         <p>left</p>
                     </div>
-                    <button className="reward" onClick={openPledge}>Select Reward</button>
+                    <button className="reward" onClick={openP}>Select Reward</button>
                 </div>
             </div>
 
@@ -52,11 +50,11 @@ export default function About({active, deactive}) {
                         <h1 className="num">64</h1>
                         <p>left</p>
                     </div>
-                    <button className="reward">Select Reward</button>
+                    <button className="reward" onClick={openP}>Select Reward</button>
                 </div>
             </div>
 
-            <div className=" Mahogany-Special card ">
+            <div className=" Mahogany-Special card out-of-stock">
                 <div className="head">
                     <h1 className="heading"> Mahogany Special Edition</h1>
                     <h1 className="pledge">Pledge $200 or more</h1>
