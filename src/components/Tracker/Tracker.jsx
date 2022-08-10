@@ -1,15 +1,15 @@
 import React from 'react'
 import './Tracker.css'
-export default function Tracker() {
+export default function Tracker({backed}) {
   return (
     <div className=' tracker-wrapper'>
       <div className="tracks">
         <div className="backed border">
-          <h1 className="heading">$89,914</h1>
+          <h1 className="heading">${backed}</h1>
           <p className="body">of $100,000 backed</p>
         </div>
         <div className="backers border">
-          <h1 className="heading">5,007</h1>
+          <h1 className="heading">5,000</h1>
           <p className="body">total backers</p>
         </div>
         <div className="time-left border">

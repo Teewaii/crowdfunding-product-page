@@ -4,8 +4,12 @@ import './Pledge.css'
 import '../btn/amount.css'
 import closeModalIcon from '../../images/icon-close-modal.svg'
 export default function Pledge({closeModal,deactive, closePledge}) {
-    // const [closeModal, setCloseModal] = useState(true)
+    const [amount, setAmount] = useState(15);
 
+    function Add(){
+        setAmount(1502);
+    }
+    
     function closP() {
         closePledge(false);
         deactive()
@@ -41,7 +45,8 @@ export default function Pledge({closeModal,deactive, closePledge}) {
                         <input type="radio" name="pledge" id='Bamboo' value='Bamboo Stand' />
                         Bamboo Stand
                     </label>
-                    <h1 className="pledge">Pledge $25 or more</h1>
+                    <h1 className="pledge">{amount}</h1>
+                    {/* <h1 className="pledge">Pledge $25 or more</h1> */}
                     <div className="slots">
                         <h1 className="num">101</h1>
                         <p>left</p>
@@ -55,9 +60,9 @@ export default function Pledge({closeModal,deactive, closePledge}) {
                     <div className="pledge-container">
                         <form method="post" action="#">
                             <span>$</span>
-                            <input type="number" min='25'  className='amount' />
+                            <input type="number" min='25'  className='amount' name="pledge-value" placeholder={amount}/>
                         </form>
-                        <button className="continue" >Continue</button>
+                        <button className="continue onClick={Add()}" >Continue</button>
                     </div>
                 </div>
             </div>
@@ -85,7 +90,7 @@ export default function Pledge({closeModal,deactive, closePledge}) {
                     <div className="pledge-container">
                         <form method="post" action="#">
                         <span>$</span>
-                            <input type="number" min='75' className='amount' />
+                            <input type="number" min='75' className='amount' name="pledge-value" />
                         </form>
                         <button className="continue">Continue</button>
                     </div>

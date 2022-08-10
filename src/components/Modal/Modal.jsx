@@ -8,8 +8,23 @@ import Pledge from '../Pledges/Pledge'
 
 export default function Modal() {
   const [modal, setModal] = useState(false);
-  const [pledge, setPledge] = useState(false);
+  const [pledge, setPledge] = useState(true);
   // const [closeIcon, setCloseIcon] = useState(false);
+
+const [backed, setBacked] = useState(89000);
+const [amount, setAmount] = useState('20');
+
+function handleChange(event){
+setAmount(event.target.value)
+}
+
+
+function AddPledge(event){
+  setBacked(prev=>{
+    console.log(prev+event.target.value)
+    
+  })
+}
 
   function handleClick() {
     setModal(!modal)
@@ -20,12 +35,10 @@ export default function Modal() {
     setModal(false)
     // setCloseIcon(true)
   }
+
   return (
     
     <div className="modal-wrapper ">
-
-
-
 
       <Nav 
       active={handleClick}
@@ -37,12 +50,14 @@ export default function Modal() {
    closePledge={setPledge}
    openPledge={setPledge}
    deactive={closeModal}
+   newPledge={AddPledge}
+   
    />}
       <Monitor 
       openPledge={setPledge}
       active={handleClick}
       deactive={closeModal}/>
-      <Tracker />
+      <Tracker backed={backed} />
       <About
       openPledge={setPledge}
       active={handleClick}

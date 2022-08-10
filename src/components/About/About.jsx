@@ -12,6 +12,7 @@ export default function About({active, deactive,openPledge,closePledge}) {
         openPledge(true)
     }
 
+    
 
     return (
         <div className="about-wrapper pad">
