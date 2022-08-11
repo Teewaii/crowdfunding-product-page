@@ -17,13 +17,16 @@ export default function Tracker({backed,Progress}) {
           <p className="body">days left</p>
         </div>
       </div>
+
+      {/* In-line style for the progress bar */}
       <div className="progress-container"
        style={{
         backgroundColor:"#e4eaec",
         width:"95%",
         height: "16px",
         borderRadius: "10px",
-        overflow:"hidden"
+        overflow:"hidden",
+        marginBottom:" 15px"
       }}>
         <div className="progress-bar"
         style={{

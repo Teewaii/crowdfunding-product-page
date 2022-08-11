@@ -36,7 +36,6 @@ body {
     margin-right: auto;
     position: relative;
 
-    // margin-top: 20px;
     .logo {
 
         font-size: 1.5rem;
@@ -45,11 +44,8 @@ body {
         @media (min-width:800px) {
             font-size: 1.8rem;
         }
-
         font-weight: $Headerweight;
     }
-
-
 
     .list-items {
 
@@ -63,8 +59,8 @@ body {
             right: 0;
             top: 120%;
             width: 65vw;
-            padding: 30px 40px;
-            max-height: 25vh;
+            padding: 20px 40px;
+            max-height: 23vh;
             margin: 0 auto;
             z-index: 4;
             overflow: hidden;
@@ -73,9 +69,11 @@ body {
                 list-style: none;
                 font-size: 1.5rem;
                 font-weight: $Buttonweight;
-                margin-bottom: 65px;
+                margin-bottom: 35px;
                 position: relative;
-
+                    &:last-child{
+                        margin-bottom: 0px;
+                        }
                 &:after {
                     content: "";
                     background-color: rgb(222, 213, 213);
@@ -83,7 +81,7 @@ body {
                     width: 800px;
                     position: absolute;
                     left: -70px;
-                    top: 55px;
+                    top: 45px;
                 }
 
             }
@@ -91,7 +89,6 @@ body {
             a {
                 text-decoration: none;
                 color: black;
-                // padding: 0 40px;
             }
         }
 

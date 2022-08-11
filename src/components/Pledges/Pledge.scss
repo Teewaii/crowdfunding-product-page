@@ -133,7 +133,7 @@ body {
         border: 2px solid $LightGray;
         margin: 0 auto;
         border-radius: 12px;
-        padding: 30px 15px ;
+        padding: 30px 10px ;
         position: relative;
         margin-bottom: 20px;
         overflow-x: hidden;
@@ -263,6 +263,14 @@ body {
             }
         }
     }
+    .out-of-stock {
+        opacity: .3;
+
+        .reward {
+            background-color: $DarkGray;
+        }
+    }
+
 
 
 }

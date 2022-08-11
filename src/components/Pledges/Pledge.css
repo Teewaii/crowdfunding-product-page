@@ -83,7 +83,7 @@ body {
   border: 2px solid hsl(195deg, 17%, 91%);
   margin: 0 auto;
   border-radius: 12px;
-  padding: 30px 15px;
+  padding: 30px 10px;
   position: relative;
   margin-bottom: 20px;
   overflow-x: hidden;
@@ -196,4 +196,10 @@ body {
     flex-direction: row;
     justify-content: flex-end;
   }
+}
+.pledges-wrapper .out-of-stock {
+  opacity: 0.3;
+}
+.pledges-wrapper .out-of-stock .reward {
+  background-color: hsl(0deg, 0%, 48%);
 }/*# sourceMappingURL=Pledge.css.map */

@@ -3,14 +3,15 @@ import '../btn/btn.css'
 import './Pledge.css'
 import '../btn/amount.css'
 import closeModalIcon from '../../images/icon-close-modal.svg'
-export default function Pledge({closeModal,deactive, closePledge,Increase,Change}) {
+export default function Pledge({closeModal,deactive, closePledge,Change}) {
     const [amount, setAmount] = useState(15);
 
-    function Add(){
-        Increase();
-        closePledge(false);
-        deactive()
-    }
+    // Add new pledge button
+    // function Add(){
+    //     Increase();
+    //     closePledge(false);
+    //     deactive()
+    // }
     
     function closP() {
         closePledge(false);
@@ -63,7 +64,7 @@ export default function Pledge({closeModal,deactive, closePledge,Increase,Change
                             <span>$</span>
                             <input type="number" min='25' onChange={Change}  className='amount' name="pledge-value" placeholder={amount}/>
                         </form>
-                        <button className="continue"  onClick={Add}>Continue</button>
+                        <button className="continue"  >Continue</button>
                     </div>
                 </div>
             </div>
@@ -100,7 +101,7 @@ export default function Pledge({closeModal,deactive, closePledge,Increase,Change
 
 
             {/* Mahogany Container */}
-            <div className=" Mahogany-Special pledge-card ">
+            <div className=" Mahogany-Special pledge-card out-of-stock">
                 <div className="head">
 
                     <label className='MahoganySpecial'>

@@ -24,7 +24,7 @@ body {
   margin: auto;
   margin-bottom: 20px;
   border-radius: 12px;
-  padding: 30px 40px;
+  padding: 30px 30px;
   position: relative;
   margin-top: 320px;
   box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
@@ -70,6 +70,7 @@ body {
 .monitor-wrapper .bookmark {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .monitor-wrapper .bookmark .bookmark-icon {
   position: relative;
