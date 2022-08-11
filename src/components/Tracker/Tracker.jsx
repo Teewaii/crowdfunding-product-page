@@ -1,6 +1,6 @@
 import React from 'react'
 import './Tracker.css'
-export default function Tracker({backed}) {
+export default function Tracker({backed,Progress}) {
   return (
     <div className=' tracker-wrapper'>
       <div className="tracks">
@@ -17,8 +17,22 @@ export default function Tracker({backed}) {
           <p className="body">days left</p>
         </div>
       </div>
-      <div className="progress-container">
-        <div className="progress-bar"></div>
+      <div className="progress-container"
+       style={{
+        backgroundColor:"#e4eaec",
+        width:"95%",
+        height: "16px",
+        borderRadius: "10px",
+        overflow:"hidden"
+      }}>
+        <div className="progress-bar"
+        style={{
+          backgroundColor:"#3cb4ac",
+          width:`${Progress}%`,
+          height: "100%",
+          borderRadius: "10px"
+        }}
+        ></div>
       </div>
     </div>
   )

@@ -3,11 +3,13 @@ import '../btn/btn.css'
 import './Pledge.css'
 import '../btn/amount.css'
 import closeModalIcon from '../../images/icon-close-modal.svg'
-export default function Pledge({closeModal,deactive, closePledge}) {
+export default function Pledge({closeModal,deactive, closePledge,Increase,Change}) {
     const [amount, setAmount] = useState(15);
 
     function Add(){
-        setAmount(1502);
+        Increase();
+        closePledge(false);
+        deactive()
     }
     
     function closP() {
@@ -45,8 +47,7 @@ export default function Pledge({closeModal,deactive, closePledge}) {
                         <input type="radio" name="pledge" id='Bamboo' value='Bamboo Stand' />
                         Bamboo Stand
                     </label>
-                    <h1 className="pledge">{amount}</h1>
-                    {/* <h1 className="pledge">Pledge $25 or more</h1> */}
+                    <h1 className="pledge">Pledge $25 or more</h1>
                     <div className="slots">
                         <h1 className="num">101</h1>
                         <p>left</p>
@@ -60,9 +61,9 @@ export default function Pledge({closeModal,deactive, closePledge}) {
                     <div className="pledge-container">
                         <form method="post" action="#">
                             <span>$</span>
-                            <input type="number" min='25'  className='amount' name="pledge-value" placeholder={amount}/>
+                            <input type="number" min='25' onChange={Change}  className='amount' name="pledge-value" placeholder={amount}/>
                         </form>
-                        <button className="continue onClick={Add()}" >Continue</button>
+                        <button className="continue"  onClick={Add}>Continue</button>
                     </div>
                 </div>
             </div>

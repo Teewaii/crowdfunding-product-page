@@ -7,24 +7,38 @@ import About from '../About/About'
 import Pledge from '../Pledges/Pledge'
 
 export default function Modal() {
+  var Total=89000;
   const [modal, setModal] = useState(false);
-  const [pledge, setPledge] = useState(true);
+  const [pledge, setPledge] = useState(false);
+  const [prog, setProg] = useState(0.001*Total);
   // const [closeIcon, setCloseIcon] = useState(false);
 
-const [backed, setBacked] = useState(89000);
-const [amount, setAmount] = useState('20');
+const [backed, setBacked] = useState(Total);
 
 function handleChange(event){
-setAmount(event.target.value)
+  Total= parseInt(event.target.value);
 }
 
+function ProbBar(){
+  setProg(prog)
+}
 
 function AddPledge(event){
-  setBacked(prev=>{
-    console.log(prev+event.target.value)
-    
-  })
+  
+ setBacked((prev)=>
+  parseInt(prev+ Total)
+  
+ )
+
+  
+  // setBacked(prev=>prev+Total) 
+  
 }
+// function AddPledge(event){
+//   setBacked(prev=>{
+//     console.log(prev+event.target.value)    
+//   })
+// }
 
   function handleClick() {
     setModal(!modal)
@@ -50,14 +64,20 @@ function AddPledge(event){
    closePledge={setPledge}
    openPledge={setPledge}
    deactive={closeModal}
-   newPledge={AddPledge}
+   Increase={AddPledge}
+   Change={handleChange}   
    
    />}
+   <div className="testContainer"> <button className="continue"  onClick={AddPledge}>Continue</button></div>
+   <input type="number" min='25' onChange={handleChange}  className='amount' name="pledge-value" />
       <Monitor 
       openPledge={setPledge}
       active={handleClick}
       deactive={closeModal}/>
-      <Tracker backed={backed} />
+      <Tracker 
+      backed={backed}
+      Progress={prog}
+       />
       <About
       openPledge={setPledge}
       active={handleClick}
