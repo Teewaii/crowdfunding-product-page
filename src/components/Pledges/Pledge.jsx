@@ -3,32 +3,36 @@ import '../btn/btn.css'
 import './Pledge.css'
 import '../btn/amount.css'
 import closeModalIcon from '../../images/icon-close-modal.svg'
-export default function Pledge({closeModal,deactive, closePledge,Change}) {
-    const [amount, setAmount] = useState(15);
+export default function Pledge({ closeModal, deactive, closePledge, Change, submit }) {
+
+    // const [check, setCheck] = useState('')
 
     // Add new pledge button
-    // function Add(){
-    //     Increase();
-    //     closePledge(false);
-    //     deactive()
-    // }
-    
+    function Add() {
+        // Increase();
+        // closePledge(false);
+        // deactive()
+        closePledge(false);
+        submit(true);
+        window.scrollTo(0, 0);
+    }
+
     function closP() {
         closePledge(false);
         deactive()
     }
+
     return (
-        <div className="pledges-wrapper pad">
+        <div className="pledges-wrapper pad" >
             <div className="Modalhead ">
                 <h1 className="heading">Back this project</h1>
-                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" onClick={closP} />
+                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" />
             </div>
             <p className='body'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
             {/* No-reward Container */}
-            <div className="No-reward pledge-card">
+            <label className="No-reward pledge-card" >
                 <div className="head">
-
                     <label className='NoReward'>
                         <input type="radio" name="pledge" id='No-reward' value='No Reward' />
                         Pledge with no reward
@@ -38,13 +42,13 @@ export default function Pledge({closeModal,deactive, closePledge,Change}) {
                 <p className="body">Choose to support us without a reward if you simply believe in our project. As a backer,
                     you will be signed up to receive product updates via email.</p>
 
-            </div>
+            </label>
 
             {/* Bamboo Container */}
 
-            <div className="bamboo-stand pledge-card">
+            <label for="Bamboo" className="bamboo-stand pledge-card" >
                 <div className="head">
-                    <label className='Bamboo'>
+                    <label className='default'>
                         <input type="radio" name="pledge" id='Bamboo' value='Bamboo Stand' />
                         Bamboo Stand
                     </label>
@@ -62,19 +66,19 @@ export default function Pledge({closeModal,deactive, closePledge,Change}) {
                     <div className="pledge-container">
                         <form method="post" action="#">
                             <span>$</span>
-                            <input type="number" min='25' onChange={Change}  className='amount' name="pledge-value" placeholder={amount}/>
+                            <input type="number" min='25' onChange={Change} className='amount' name="pledge-value" placeholder='25' />
                         </form>
-                        <button className="continue"  >Continue</button>
+                        <button className="continue" onClick={Add} >Continue</button>
                     </div>
                 </div>
-            </div>
+            </label>
 
 
             {/* Black Edition */}
-            <div className="Black-Edition-Stand pledge-card ">
+            <label className="Black-Edition-Stand pledge-card" >
                 <div className="head">
 
-                    <label className='BlackEdition'>
+                    <label className='default'>
                         <input type="radio" id='Black-edition' name="pledge" value='Black Edition Stand' />
                         Black Edition Stand
                     </label>
@@ -91,20 +95,20 @@ export default function Pledge({closeModal,deactive, closePledge,Change}) {
                     <p className='Enter'>Enter your pledge</p>
                     <div className="pledge-container">
                         <form method="post" action="#">
-                        <span>$</span>
-                            <input type="number" min='75' className='amount' name="pledge-value" />
+                            <span>$</span>
+                            <input type="number" min='75' className='amount' name="pledge-value" placeholder='75' />
                         </form>
-                        <button className="continue">Continue</button>
+                        <button className="continue" onClick={Add}>Continue</button>
                     </div>
                 </div>
-            </div>
+            </label>
 
 
             {/* Mahogany Container */}
-            <div className=" Mahogany-Special pledge-card out-of-stock">
+            <label className=" Mahogany-Special pledge-card out-of-stock">
                 <div className="head">
 
-                    <label className='MahoganySpecial'>
+                    <label className='default'>
                         <input type="radio" id='Mahogany-special' name="pledge" value='Mahogany Special' />
                         Mahogany Special Edition
                     </label>
@@ -121,13 +125,13 @@ export default function Pledge({closeModal,deactive, closePledge,Change}) {
                     <p className='Enter'>Enter your pledge</p>
                     <div className="pledge-container">
                         <form method="post" action="#">
-                        <span>$</span>
-                            <input type="number" min='200'  className='amount' />
+                            <span>$</span>
+                            <input type="number" min='200' className='amount' />
                         </form>
                         <button className="continue">Continue</button>
                     </div>
                 </div>
-            </div>
+            </label>
 
         </div>
     )

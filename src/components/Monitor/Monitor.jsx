@@ -3,10 +3,11 @@ import './Monitor.css'
 import '../btn/btn.css'
 import icon from '../../images/logo-mastercraft.svg'
 import bookmarkIcon from '../../images/icon-bookmark.svg'
-export default function Monitor({active,deactive,openPledge}) {
-    function openP(){
+export default function Monitor({ active, deactive, openPledge }) {
+    function openP() {
         active();
         openPledge(true)
+        window.scrollTo(0, 0);
     }
     return (
         <div className="monitor-wrapper">
@@ -17,7 +18,7 @@ export default function Monitor({active,deactive,openPledge}) {
             <p className="body">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
 
             <div className="bookmark">
-                <button className="btn" onClick={openP}>Back this project</button>
+                <button className="btn-back" onClick={openP}>Back this project</button>
                 <div className="bookmark-icon">
                     <img src={bookmarkIcon} alt="" />
                     <div className="bookmark-text hideOnMobile">

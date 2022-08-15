@@ -1,18 +1,17 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 // import Modal from 'react-modal'
 import './About.css'
 import '../btn/btn.css'
 import Pledge from '../Pledges/Pledge'
 // import '../Card/Card.css'
 
-export default function About({active, deactive,openPledge,closePledge}) {
-   
-    function openP(){
-        active();
-        openPledge(true)
-    }
+export default function About({ active, deactive, openPledge, closePledge, scroll }) {
 
-    
+    function openP() {
+        active();
+        openPledge(true);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className="about-wrapper pad">

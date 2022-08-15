@@ -44,6 +44,7 @@ body {
         @media (min-width:800px) {
             font-size: 1.8rem;
         }
+
         font-weight: $Headerweight;
     }
 
@@ -71,9 +72,16 @@ body {
                 font-weight: $Buttonweight;
                 margin-bottom: 35px;
                 position: relative;
-                    &:last-child{
-                        margin-bottom: 0px;
-                        }
+
+                &:last-child {
+                    margin-bottom: 2px;
+
+                    &:after {
+                        content: "";
+                        height: 0px;
+                    }
+                }
+
                 &:after {
                     content: "";
                     background-color: rgb(222, 213, 213);
@@ -84,11 +92,16 @@ body {
                     top: 45px;
                 }
 
+
             }
 
             a {
                 text-decoration: none;
                 color: black;
+
+                &:hover {
+                    color: $ModerateCyan;
+                }
             }
         }
 
@@ -109,12 +122,11 @@ body {
         }
     }
 
-    .mobile-menu img {        
+    .mobile-menu img {
         position: relative;
         width: 15px;
         height: 15px;
         z-index: 13;
-
 
         @media (min-width:800px) {
             display: none;

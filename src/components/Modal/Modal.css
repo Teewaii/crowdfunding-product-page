@@ -7,6 +7,7 @@ body {
   font-size: 16px;
   background-color: hwb(0 94% 6%);
   min-height: 100vh;
+  position: relative;
 }
 
 .modal-wrapper {
@@ -14,7 +15,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 340px;
   max-width: 100%;
   background-color: hwb(0 94% 6%);
   padding: 20px 0;
@@ -25,6 +26,27 @@ body {
     background-position: center;
     background-size: cover;
     height: 550px;
+  }
+}
+@media (max-width: 800px) {
+  .modal-wrapper .toTop {
+    background-color: hsl(176deg, 50%, 47%);
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .modal-wrapper .toTop img {
+    width: 25px;
   }
 }
 

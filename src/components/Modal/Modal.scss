@@ -18,16 +18,17 @@ body {
     font-size: 16px;
     background-color: $Bkg;
     min-height: 100vh;
+    position: relative;
 }
 
 
-  
+
 .modal-wrapper {
     background-image: url("../../images/image-hero-mobile.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 340px;
     max-width: 100%;
     background-color: $Bkg;
     padding: 20px 0;
@@ -39,10 +40,33 @@ body {
         height: 550px;
     }
 
+    @media (max-width:800px) {
+
+        .toTop {
+            background-color: $ModerateCyan;
+            width: 5px;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
 }
 
-.overlay{
-    background-color: rgb(0, 0, 0,.7);
+.overlay {
+    background-color: rgb(0, 0, 0, .7);
     position: fixed;
     top: 0;
     left: 0;

@@ -6,35 +6,37 @@ $DarkGray: hsl(0, 0%, 48%);
 $Headerweight: 800;
 $Buttonweight: 700;
 
-form{
+form {
     position: relative;
-   width: 45%;
+    // width: 45%;
 
-.amount {
-    border-radius: 50px;
-    border: 1px solid $LightGray;
-    padding: 15px 5px;
-    font-size: .8rem;
-    width:95px;
-    font-weight: $Buttonweight;
-    color: $DarkGray;
-    margin-right: 10px;
+    .amount {
+        border-radius: 50px;
+        border: 1px solid $LightGray;
+        padding: 15px 5px;
+        font-size: .8rem;
+        width: 160px;
+        font-weight: $Buttonweight;
+        color: $DarkGray;
 
-    @media (min-wdith:900px) {
-         width: 180px;
-         padding: 50px 10px;
-         border: 1px solid red;
+
+        @media (min-wdith:900px) {
+            width: 180px;
+            padding: 50px 10px;
+            margin-right: 10px;
+
+        }
+
     }
 
-}
-span{
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    font-size: 1.1rem;
-    font-weight: $Buttonweight;
-    color: $DarkGray;
+    span {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 1.1rem;
+        font-weight: $Buttonweight;
+        color: $DarkGray;
 
-    
-}
+
+    }
 }

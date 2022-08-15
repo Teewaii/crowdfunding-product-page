@@ -43,12 +43,12 @@ body {
     margin-top: 50px;
   }
 }
-.pledges-wrapper label {
+.pledges-wrapper label .default {
   font-size: 1.2rem;
   font-weight: 700;
   position: relative;
 }
-.pledges-wrapper label:hover {
+.pledges-wrapper label .default:hover {
   color: hsl(176deg, 50%, 47%);
 }
 .pledges-wrapper input[type=radio] {
@@ -83,10 +83,33 @@ body {
   border: 2px solid hsl(195deg, 17%, 91%);
   margin: 0 auto;
   border-radius: 12px;
-  padding: 30px 10px;
+  padding: 30px 10px 50px 10px;
   position: relative;
   margin-bottom: 20px;
   overflow-x: hidden;
+}
+.pledges-wrapper .pledge-card:hover .bottom {
+  display: flex;
+  margin-top: 70px;
+}
+.pledges-wrapper .pledge-card:hover .slots {
+  margin-bottom: 220px;
+}
+@media (min-width: 900px) {
+  .pledges-wrapper .pledge-card:hover .slots {
+    margin-bottom: 120px;
+  }
+}
+.pledges-wrapper .pledge-card:hover .slots::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  height: 2px;
+  background-color: hsl(195deg, 17%, 91%);
+  bottom: 2%;
+  left: -90px;
+  right: 0;
+  width: 1500px;
 }
 @media (min-width: 900px) {
   .pledges-wrapper .pledge-card {
@@ -118,12 +141,13 @@ body {
 .pledges-wrapper .pledge-card .body {
   font-size: 1rem;
   color: hsl(0deg, 0%, 48%);
-  line-height: 1.8rem;
+  line-height: 2rem;
   margin-bottom: 10px;
 }
 @media (min-width: 800px) {
   .pledges-wrapper .pledge-card .body {
     font-size: 1.5rem;
+    line-height: 2.5rem;
     margin-bottom: 90px;
   }
 }
@@ -134,23 +158,17 @@ body {
   font-size: 1rem;
   font-weight: 700;
   position: absolute;
-  bottom: 30%;
+  bottom: 0%;
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 1rem;
   font-weight: 700;
 }
-.pledges-wrapper .pledge-card .slots::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  height: 2px;
-  background-color: hsl(195deg, 17%, 91%);
-  bottom: 2%;
-  left: -90px;
-  right: 0;
-  width: 1200px;
+@media (min-width: 800px) {
+  .pledges-wrapper .pledge-card .slots {
+    bottom: 4%;
+  }
 }
 .pledges-wrapper .pledge-card .slots p {
   font-size: 1rem;
@@ -167,34 +185,37 @@ body {
 .pledges-wrapper .pledge-card:hover {
   border: 2px solid hsl(176deg, 50%, 47%);
 }
-.pledges-wrapper .bottom {
-  display: flex;
+.pledges-wrapper .pledge-card .bottom {
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  margin-top: 40px;
   width: 100%;
 }
 @media (min-width: 900px) {
-  .pledges-wrapper .bottom {
+  .pledges-wrapper .pledge-card .bottom {
     flex-direction: row;
     margin-top: 50px;
   }
-  .pledges-wrapper .bottom .Enter {
+  .pledges-wrapper .pledge-card .bottom .Enter {
     width: 100%;
+    color: hsl(176deg, 72%, 28%);
+    font-size: 1.2rem;
   }
 }
-.pledges-wrapper .bottom .pledge-container {
+.pledges-wrapper .pledge-card .bottom .pledge-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 @media (min-width: 900px) {
-  .pledges-wrapper .bottom .pledge-container {
+  .pledges-wrapper .pledge-card .bottom .pledge-container {
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
   }
 }
 .pledges-wrapper .out-of-stock {

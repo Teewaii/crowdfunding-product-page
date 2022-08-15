@@ -62,7 +62,11 @@ body {
     position: relative;
   }
   .Nav-bar .list-items li:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 2px;
+  }
+  .Nav-bar .list-items li:last-child:after {
+    content: "";
+    height: 0px;
   }
   .Nav-bar .list-items li:after {
     content: "";
@@ -76,6 +80,9 @@ body {
   .Nav-bar .list-items a {
     text-decoration: none;
     color: black;
+  }
+  .Nav-bar .list-items a:hover {
+    color: hsl(176deg, 50%, 47%);
   }
 }
 @media (min-width: 800px) {

@@ -1,28 +1,26 @@
 form {
   position: relative;
-  width: 45%;
 }
 form .amount {
   border-radius: 50px;
   border: 1px solid hsl(180deg, 2%, 81%);
   padding: 15px 5px;
   font-size: 0.8rem;
-  width: 95px;
+  width: 160px;
   font-weight: 700;
   color: hsl(0deg, 0%, 48%);
-  margin-right: 10px;
 }
 @media (min-wdith: 900px) {
   form .amount {
     width: 180px;
     padding: 50px 10px;
-    border: 1px solid red;
+    margin-right: 10px;
   }
 }
 form span {
   position: absolute;
-  top: 25%;
-  left: 10%;
+  top: 15px;
+  left: 15px;
   font-size: 1.1rem;
   font-weight: 700;
   color: hsl(0deg, 0%, 48%);

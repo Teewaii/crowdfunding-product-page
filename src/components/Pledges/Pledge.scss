@@ -59,10 +59,12 @@ body {
         margin-top: 50px;
     }
 
-    label {
+    label .default {
         font-size: 1.2rem;
         font-weight: $Buttonweight;
         position: relative;
+
+
 
         &:hover {
             color: $ModerateCyan;
@@ -100,15 +102,17 @@ body {
         // &:checked + .pad::after{
         //     transform: scale(1);
         // }
+
     }
 
-   
 
-    input[type='number']{
+
+    input[type='number'] {
         font-size: 1.3rem;
         padding-left: 35px;
         color: black;
         margin-bottom: 12px;
+
         @media (min-width:900px) {
             margin-bottom: 0;
         }
@@ -121,7 +125,7 @@ body {
         cursor: pointer;
         width: 100%;
 
-      
+
     }
 
     .pledge-card {
@@ -133,11 +137,40 @@ body {
         border: 2px solid $LightGray;
         margin: 0 auto;
         border-radius: 12px;
-        padding: 30px 10px ;
+        padding: 30px 10px 50px 10px;
         position: relative;
         margin-bottom: 20px;
         overflow-x: hidden;
-    
+
+        // &:hover {
+        //     padding: 30px 10px 35px 10px;
+        // }
+
+        &:hover .bottom {
+            display: flex;
+            margin-top: 70px;
+        }
+
+        &:hover .slots {
+            margin-bottom: 220px;
+
+            @media (min-width:900px) {
+                margin-bottom: 120px;
+
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 10px;
+                height: 2px;
+                background-color: $LightGray;
+                bottom: 2%;
+                left: -90px;
+                right: 0;
+                width: 1500px;
+            }
+        }
 
         @media (min-width:900px) {
             margin-bottom: 30px;
@@ -150,10 +183,12 @@ body {
 
         .head,
         .bottom {
+
             .heading {
                 margin: 0;
 
             }
+
             .pledge {
                 color: $ModerateCyan;
                 font-size: clamp(1rem, 2.5vw, 1.3rem);
@@ -170,11 +205,12 @@ body {
         .body {
             font-size: 1rem;
             color: $DarkGray;
-            line-height: 1.8rem;
+            line-height: 2rem;
             margin-bottom: 10px;
 
             @media (min-width:800px) {
                 font-size: 1.5rem;
+                line-height: 2.5rem;
                 margin-bottom: 90px;
             }
 
@@ -182,27 +218,31 @@ body {
 
 
         .slots {
-            
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                font-size: 1rem;
-                font-weight: $Buttonweight;
-                position: absolute;
-                bottom: 30%;
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 10px;
-                    height: 2px;
-                    background-color: $LightGray;
-                    bottom: 2%;
-                    left: -90px;
-                    right: 0;
-                    width: 1200px;
-                }
-            
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 1rem;
+            font-weight: $Buttonweight;
+            position: absolute;
+            bottom: 0%;
+
+            @media (min-width:800px) {
+                bottom: 4%;
+            }
+
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     bottom: 10px;
+            //     height: 2px;
+            //     background-color: $LightGray;
+            //     bottom: 2%;
+            //     left: -90px;
+            //     right: 0;
+            //     width: 1500px;
+            // }
+
 
             display: flex;
             align-items: center;
@@ -224,45 +264,50 @@ body {
         @media (min-width:800px) {
             padding: 15px 30px;
         }
-&:hover{
-    border: 2px solid $ModerateCyan;
-    
-}
-    }
 
-    .bottom {
+        &:hover {
+            border: 2px solid $ModerateCyan;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 90px;
-        width: 100%;
-        
-        @media (min-width:900px) {
-            flex-direction: row;
-            margin-top: 50px;
-            .Enter {
-                width: 100%;
-            }
         }
 
-        .pledge-container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: center;
-            align-items: flex-start;           
+        .bottom {
 
-            // transform: scale(.9);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            width: 100%;
 
             @media (min-width:900px) {
                 flex-direction: row;
-                justify-content: flex-end;
+                margin-top: 50px;
 
+                .Enter {
+                    width: 100%;
+                    color: $DarkCyan;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .pledge-container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+
+                // transform: scale(.9);
+
+                @media (min-width:900px) {
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
             }
         }
     }
+
     .out-of-stock {
         opacity: .3;
 

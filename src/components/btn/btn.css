@@ -4,12 +4,14 @@
   border: none;
   overflow-x: auto;
   padding: 5px 20px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: white;
-  height: 50px;
+  height: 60px;
   transform: scale(0.8);
   margin-left: -10px;
+  width: 200px;
+  cursor: pointer;
 }
 @media (min-width: 700px) {
   .reward {
@@ -27,13 +29,15 @@
   border-radius: 50px;
   border: none;
   overflow-x: auto;
-  padding: 5px 20px;
-  font-size: 0.8rem;
+  padding: 5px 4px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: white;
-  height: 60px;
+  height: 65px;
   transform: scale(0.8);
   margin-left: -10px;
+  width: 250px;
+  cursor: pointer;
 }
 @media (min-width: 700px) {
   .continue {
@@ -55,14 +59,41 @@
   color: white;
   height: 60px;
   transform: scale(0.8);
+  cursor: pointer;
 }
 @media (min-width: 700px) {
   .btn {
     font-size: 1.3rem;
     padding: 12px 30px;
     height: 75px;
+    width: 250px;
   }
 }
 .btn:hover {
+  background-color: hsl(176deg, 72%, 28%);
+}
+
+.btn-back {
+  background-color: hsl(176deg, 50%, 47%);
+  border-radius: 50px;
+  border: none;
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  height: 70px;
+  width: 200px;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+@media (min-width: 700px) {
+  .btn-back {
+    font-size: 1.5rem;
+    padding: 12px 30px;
+    height: 75px;
+    width: 300px;
+  }
+}
+.btn-back:hover {
   background-color: hsl(176deg, 72%, 28%);
 }/*# sourceMappingURL=btn.css.map */
