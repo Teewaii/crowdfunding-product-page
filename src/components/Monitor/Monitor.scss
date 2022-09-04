@@ -85,16 +85,43 @@ body {
         justify-content: space-between;
         align-items: center;
 
-
         .bookmark-icon {
             position: relative;
             cursor: pointer;
+
+            .bok {
+
+                .mark-icon {
+                    font-size: 1.2rem;
+                    color: white;
+                    z-index: 900;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+
+
+                &::after {
+                    content: "";
+                    background-color: $ModerateCyan;
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+
+                    @media screen and (min-width:920px) {
+                        top: 0;
+                        z-index: 200;
+                    }
+                }
+            }
 
             @media (min-width:700px) {
                 display: flex;
                 align-items: center;
             }
-
 
         }
 
@@ -135,7 +162,10 @@ body {
             }
 
             // }
-
+            .mark {
+                color: $ModerateCyan;
+            }
         }
+
     }
 }

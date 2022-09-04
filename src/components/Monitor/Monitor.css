@@ -77,6 +77,30 @@ body {
   position: relative;
   cursor: pointer;
 }
+.monitor-wrapper .bookmark .bookmark-icon .bok .mark-icon {
+  font-size: 1.2rem;
+  color: white;
+  z-index: 900;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.monitor-wrapper .bookmark .bookmark-icon .bok::after {
+  content: "";
+  background-color: hsl(176deg, 50%, 47%);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 920px) {
+  .monitor-wrapper .bookmark .bookmark-icon .bok::after {
+    top: 0;
+    z-index: 200;
+  }
+}
 @media (min-width: 700px) {
   .monitor-wrapper .bookmark .bookmark-icon {
     display: flex;
@@ -116,4 +140,7 @@ body {
     font-size: 1rem;
     margin-left: 40px;
   }
+}
+.monitor-wrapper .bookmark .bookmark-text .mark {
+  color: hsl(176deg, 50%, 47%);
 }/*# sourceMappingURL=Monitor.css.map */
