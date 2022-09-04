@@ -29,9 +29,9 @@ export default function Monitor({ active, deactive, openPledge }) {
 
             <div className="bookmark">
                 <button className="btn-back" onClick={openP}>Back this project</button>
-                <div className="bookmark-icon" onClick={handleChange}>
+                <div className="bookmark-icon">
                     {bookmark ? <div className="bok">
-                        <ImBookmark className='mark-icon round' />
+                        <ImBookmark className='mark-icon round' onClick={handleChange} />
                     </div> : null}
                     <img src={bookmarkIcon} alt="" onClick={handleChange} />
                     <div className="bookmark-text hideOnMobile">
