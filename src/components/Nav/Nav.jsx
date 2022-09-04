@@ -5,7 +5,7 @@ import closeMenu from "../../images/icon-close-menu.svg"
 
 export default function Nav({ active, deactive }) {
 
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
   const [closeIcon, setCloseIcon] = useState(false)
 
   function closeModal() {

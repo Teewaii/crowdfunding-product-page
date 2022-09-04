@@ -23,8 +23,6 @@ export default function Modal() {
   const [submitMsg, setSubmitMsg] = useState(false);
 
 
-
-
   // HandleChange for pledging
   function handleChange(event) {
     Total = parseInt(event.target.value);
