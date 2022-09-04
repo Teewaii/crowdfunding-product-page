@@ -11,7 +11,7 @@ export default function Monitor({ active, deactive, openPledge }) {
         window.scrollTo(0, 0);
     }
 
-    const [bookmark, setBookmark] = useState(true);
+    const [bookmark, setBookmark] = useState(false);
 
     function handleChange() {
         setBookmark(prev =>
