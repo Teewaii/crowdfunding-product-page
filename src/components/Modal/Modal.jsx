@@ -10,7 +10,7 @@ import Submit from '../SubmitMessage/Submit'
 
 export default function Modal() {
   // Inintializing the total pledge amount
-  var Total = 89000;
+  var Total = 89914;
   // Overlay effect useState
   const [modal, setModal] = useState(false);
   // Pledge component UseState

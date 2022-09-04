@@ -24,7 +24,7 @@ body {
   text-align: left;
   background-color: white;
   border: 1px solid hsl(195deg, 17%, 91%);
-  width: 68vw;
+  width: 70vw;
   margin: 0 auto;
   border-radius: 12px;
   padding: 20px 40px;
@@ -37,7 +37,7 @@ body {
 }
 @media (min-width: 800px) {
   .pledges-wrapper {
-    width: 50vw;
+    width: 55vw;
     padding: 20px 50px;
     align-items: flex-start;
     margin-top: 50px;

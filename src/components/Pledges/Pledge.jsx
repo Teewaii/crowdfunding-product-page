@@ -31,7 +31,7 @@ export default function Pledge({ closeModal, deactive, closePledge, Change, subm
             <p className='body'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
             {/* No-reward Container */}
-            <label className="No-reward pledge-card" >
+            <label className="No-reward pledge-card " onClick={Add}>
                 <div className="head">
                     <label className='NoReward'>
                         <input type="radio" name="pledge" id='No-reward' value='No Reward' />

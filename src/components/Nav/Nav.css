@@ -101,8 +101,8 @@ body {
 }
 .Nav-bar .mobile-menu img {
   position: relative;
-  width: 15px;
-  height: 15px;
+  width: 22px;
+  height: 20px;
   z-index: 13;
 }
 @media (min-width: 800px) {

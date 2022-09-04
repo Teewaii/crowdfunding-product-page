@@ -31,21 +31,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background-color: white;
     border: 1px solid $LightGray;
-    width: 68vw;
+    width: 70vw;
     margin: 0 auto;
     border-radius: 12px;
     margin-bottom: 20px;
     padding: 20px 30px;
     position: relative;
-    box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
-    -webkit-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
-    -moz-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.11);
+    box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.05);
+    -webkit-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.05);
+    -moz-box-shadow: -8px 12px 8px -5px rgba(86, 86, 86, 0.05);
 
     @media (min-width:800px) {
-        width: 50vw;
+        width: 55vw;
         padding: 20px 50px;
         align-items: flex-start;
     }
@@ -58,6 +58,7 @@ body {
             margin-bottom: -15px;
 
         }
+
         .border {
             // border-bottom: 1px solid gray;
             position: relative;
