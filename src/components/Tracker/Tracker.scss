@@ -70,10 +70,12 @@ body {
                 content: ' ';
                 background-color: $LightGray;
                 height: 2px;
-                width: 130px;
+                width: 180px;
                 position: absolute;
-                right: 30%;
+                right: 0;
+                left: 0;
                 top: -11px;
+
             }
         }
 
