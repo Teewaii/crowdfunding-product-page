@@ -22,6 +22,21 @@ export default function Modal() {
 
   const [submitMsg, setSubmitMsg] = useState(false);
 
+  const [toggle, setToggle] = useState(false);
+  const [closeIcon, setCloseIcon] = useState(false);
+
+  function toggleMenu() {
+    handleClick()
+    setToggle(prevToggle => !prevToggle)
+    setCloseIcon(prevClose => !prevClose)
+
+  }
+  function closMenu() {
+    setToggle(prevToggle => !prevToggle)
+    setCloseIcon(prevClose => !prevClose)
+    closeModal()
+  }
+
 
   // HandleChange for pledging
   function handleChange(event) {
@@ -40,8 +55,10 @@ export default function Modal() {
   }
   // Disable overlay and Pledge Component
   function handleClick() {
-    setModal(!modal)
-    setPledge(false)
+    setModal(!modal);
+    setPledge(false);
+    setToggle(false)
+   setCloseIcon(false)
   }
 
   // Close modal by clicking the X-icon
@@ -57,6 +74,10 @@ export default function Modal() {
       <Nav
         active={handleClick}
         deactive={closeModal}
+        toggleMenu={toggleMenu}
+        closMenu={closMenu}
+        toggle={toggle}
+        closeIcon={closeIcon}
       />
 
       {pledge && <Pledge

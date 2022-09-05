@@ -5,9 +5,7 @@ import '../btn/amount.css'
 import closeModalIcon from '../../images/icon-close-modal.svg'
 export default function Pledge({ closeModal, deactive, closePledge, Change, submit }) {
 
-    // const [check, setCheck] = useState('')
-
-    // Add new pledge button
+      // Add new pledge button
     function Add() {
         // Increase();
         // closePledge(false);
@@ -26,7 +24,7 @@ export default function Pledge({ closeModal, deactive, closePledge, Change, subm
         <div className="pledges-wrapper pad" >
             <div className="Modalhead ">
                 <h1 className="heading">Back this project</h1>
-                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" />
+                <img src={closeModalIcon} alt="Close Modal icon" className="closeModal" onClick={closP} />
             </div>
             <p className='body'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
 
@@ -46,7 +44,7 @@ export default function Pledge({ closeModal, deactive, closePledge, Change, subm
 
             {/* Bamboo Container */}
 
-            <label for="Bamboo" className="bamboo-stand pledge-card" >
+            <label  className="bamboo-stand pledge-card" >
                 <div className="head">
                     <label className='default'>
                         <input type="radio" name="pledge" id='Bamboo' value='Bamboo Stand' />

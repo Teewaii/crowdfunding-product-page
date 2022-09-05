@@ -3,25 +3,25 @@ import './Nav.css'
 import hamb from "../../images/icon-hamburger.svg"
 import closeMenu from "../../images/icon-close-menu.svg"
 
-export default function Nav({ active, deactive }) {
+export default function Nav({ active, deactive,closMenu,toggleMenu,closeIcon,toggle }) {
 
-  const [toggle, setToggle] = useState(false);
-  const [closeIcon, setCloseIcon] = useState(false)
+  // const [toggle, setToggle] = useState(false);
+  // const [closeIcon, setCloseIcon] = useState(false)
 
   function closeModal() {
     return true
   }
-  function toggleMenu() {
-    active()
-    setToggle(prevToggle => !prevToggle)
-    setCloseIcon(prevClose => !prevClose)
+  // function toggleMenu() {
+  //   active()
+  //   setToggle(prevToggle => !prevToggle)
+  //   setCloseIcon(prevClose => !prevClose)
 
-  }
-  function closMenu() {
-    setToggle(prevToggle => !prevToggle)
-    setCloseIcon(prevClose => !prevClose)
-    deactive()
-  }
+  // }
+  // function closMenu() {
+  //   setToggle(prevToggle => !prevToggle)
+  //   setCloseIcon(prevClose => !prevClose)
+  //   deactive()
+  // }
 
 
 
